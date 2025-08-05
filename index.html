@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Interactive Image Gallery</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+            <button class="filter-btn" data-filter="portraits">Portraits</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <!-- Nature Images -->
+        <div class="gallery-item" data-category="nature">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4a4a9aa6-824f-4a16-b750-14a1a6c93c5e.png" alt="Majestic mountain range with snow-capped peaks and alpine lake at sunrise">
+            <div class="category">Nature</div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a86c8f0-f433-4829-bc73-c878822251d0.png" alt="Tropical beach with palm trees and crystal clear turquoise water">
+            <div class="category">Nature</div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3ef6360-5fd1-4edd-bbbb-6f330e9ccbf4.png" alt="Dense green forest with sunlight filtering through the trees">
+            <div class="category">Nature</div>
+        </div>
+
+        <!-- Abstract Images -->
+        <div class="gallery-item" data-category="abstract">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53e19f41-b764-43d2-9c5e-34efbbe22f97.png" alt="Colorful geometric shapes in vibrant gradient patterns">
+            <div class="category">Abstract</div>
+        </div>
+        <div class="gallery-item" data-category="abstract">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/73bda15d-029c-4264-886b-eba069572afd.png" alt="Fluid paint swirls in blue and purple tones">
+            <div class="category">Abstract</div>
+        </div>
+        <div class="gallery-item" data-category="abstract">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09cac751-4295-4a26-ac84-b06889167e7c.png" alt="Minimalist abstract design">
+            <div class="category">Abstract</div>
+        </div>
+
+        <!-- Portraits -->
+        <div class="gallery-item" data-category="portraits">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e90e0858-abbc-4a4c-bedb-60f4973209ca.png" alt="Close-up portrait of a woman with soft lighting and natural expression">
+            <div class="category">Portraits</div>
+        </div>
+        <div class="gallery-item" data-category="portraits">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5c77739f-4abd-4798-9cce-ccb54c636015.png" alt="Black and white portrait of an elderly man with strong character lines">
+            <div class="category">Portraits</div>
+        </div>
+        <div class="gallery-item" data-category="portraits">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d5b69ad6-8f6c-4edb-8ff2-4e9f865ac815.png" alt="Studio portrait of a smiling young man against a gray backdrop">
+            <div class="category">Portraits</div>
+        </div>
+
+        <!-- Architecture -->
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a108e4f1-d69c-4356-ad1a-ffc5964175ea.png" alt="Modern glass skyscraper reflecting the sunset sky">
+            <div class="category">Architecture</div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b9054307-5ba5-41b0-b813-259b4e6f98cb.png" alt="Historic cathedral with intricate stonework and stained glass windows">
+            <div class="category">Architecture</div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2ff3ce4d-eed0-4d5a-918d-dbf6280df994.png" alt="Minimalist Japanese wooden house in a zen garden setting">
+            <div class="category">Architecture</div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <button class="close-btn">&times;</button>
+        <button class="prev-btn"><</button>
+        <button class="next-btn">></button>
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <div class="image-info"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
